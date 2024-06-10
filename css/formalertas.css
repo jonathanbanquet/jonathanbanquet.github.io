@@ -1,0 +1,144 @@
+body{
+    background-color: rgb(28,27,20);
+}
+
+.menu-inicio{
+    
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+        background-color: rgb(28,27,20);
+         
+}
+.menu-inicio > li > a{
+
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+ .menu-inicio > li:hover{
+background-color:  rgba(43,40,39,255);
+
+ }
+
+ .tablaDeAlertas{
+
+	width: 600px;
+    margin-left: 700px;
+    margin-top: -800px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.tablaDeConsultas{
+width: 600px;
+margin-left: 700px;
+margin-top: 400px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+    
+
+
+table{
+	background-color: white;
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+    
+}
+
+th, td{
+	padding: 20px;
+}
+
+thead{
+	background-color: #246355;
+	border-bottom: solid 5px #0F362D;
+	color: white;
+}
+
+tr:nth-child(even){
+	background-color: #ddd;
+}
+
+tr:hover td{
+	background-color: #369681;
+	color: white;
+}
+h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.form-alertas {
+    margin-left: 15px;
+    width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-alertas h1 {
+    color: #246355;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-alertas input[type="text"],
+.form-alertas input[type="date"],
+.form-alertas input[type="time"],
+.form-alertas select,
+.form-alertas button {
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-alertas input[type="text"]:focus,
+.form-alertas input[type="date"]:focus,
+.form-alertas input[type="time"]:focus,
+.form-alertas select:focus {
+    outline: none;
+    border-color: #246355;
+}
+
+.form-alertas button {
+    background-color: #246355;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.form-alertas button:hover {
+    background-color: #0F362D;
+}
+
+.form-alertas button.modificar {
+    background-color: #FFA500;
+}
+
+.form-alertas button.modificar:hover {
+    background-color: #FF8C00;
+}
+
+.form-alertas input[type="text"]::placeholder,
+.form-alertas input[type="date"]::placeholder,
+.form-alertas input[type="time"]::placeholder {
+    color: #999;
+}
+
+.form-alertas select {
+    width: calc(100% - 42px); /* Adjusting for select arrow */
+}
+
+.form-alertas fieldset {
+    border: none;
+}

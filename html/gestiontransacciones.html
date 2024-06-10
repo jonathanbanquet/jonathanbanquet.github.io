@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/transacciones.css">
+    <title>Gestion de Transacciones</title>
+</head>
+<body onload="cargarTransaccionesGuardadas()">
+    <h1>Transacciones
+    </h1>
+    <nav>
+        <ul class="menu-inicio">
+            <li>
+                <a href="../html/principal.html" class="inicio">Inicio</a>
+            </li>
+        </ul>
+    </nav>
+    <form onsubmit="return guardarTransaccion(event)">
+        <fieldset class="form-transacciones">
+            <h1>Gestion de Transacciones</h1>
+           
+            Tipo de transaccion:
+            <input type="text" required id="tipoTransaccion" placeholder="Digite su tipo">
+            
+            Tipo de ingreso o egreso:
+            <input type="text" required id="tipoIngreso">
+           
+            Valor de la transaccion:
+            <input type="number" required id="valorTransaccion">
+            
+            Cuenta bancaria relacionada:
+            <input type="number" required id="numeroDeCuenta">
+           
+            Fecha de transaccion:
+            <input type="date" required id="fechaTransaccion">
+           
+            <button type="submit" class="guardar">Guardar</button>
+           
+            <button type="button" class="modificar" onclick="modificarTransaccion()">Modificar</button>
+           
+            Consultar Por codigo de cuenta:
+            <input type="text" id="consultar_Transaccion">
+            <button type="button" onclick="consultarTransaccion()">Consultar</button>
+            
+            Eliminar por codigo de cuenta:
+            <input type="text" id="eliminar_Transaccion">
+            <button type="button" onclick="eliminarTransaccion()">Eliminar</button>
+        </fieldset>
+    </form>
+    <table border="1" id="tablaDeTransacciones" class="tablaDeTransacciones">
+        <tr>
+            <th>Tipo de transaccion</th>
+            <th>Tipo de ingreso</th>
+            <th>Valor de la transaccion</th>
+            <th>Cuenta bancaria relacionada</th>
+            <th>Fecha de transaccion</th>
+        </tr>
+    </table>
+    <script src="../js/transacciones.js"></script>
+</body>
+</html>

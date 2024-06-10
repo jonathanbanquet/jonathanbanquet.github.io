@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion Cuentas Bancarias</title>
+    <link rel="stylesheet" href="../css/formcuentasbancarias.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+    <h1>Gestion Cuentas Bancarias</h1>
+    <nav>
+        <ul class="menu-inicio">
+            <li>
+                <a href="../html/principal.html" class="inicio">Inicio</a>
+            </li>
+    </nav>
+
+    <form action="">
+        <fieldset class="form-cuentas-bancarias">
+            <h1>Gestion Cuentas bancarias</h1>
+            <br><br>
+            Numero de cuenta:
+            <input type="number" required min="1" placeholder="Digite su numero" id="numeroDeCuenta">
+            <br>
+            <br>
+            Nombre del banco:
+            <input type="text" required id="nombreDeBanco">
+            <br>
+            <br>
+            Tipo de cuenta:
+            <input type="text" required id="tipoDeCuenta">
+            <br>
+            <br>
+            Saldo actual:
+            <input type="number" id="saldoActual">
+            <br>
+            <br>
+            <label for="estadoDeCuenta">Estado de cuenta:</label>
+            <select id="estadoDeCuenta" required>
+                <option value="Activa">Activa</option>
+                <option value="Inactiva">Inactiva</option>
+                <option value="Ahorros">Ahorros</option>
+                <option value="Inversion">Inversión</option>
+            </select>
+            
+            Fecha de apertura:
+            <input type="date" id="fechaDeApertura">
+           
+            <button class="guardar" type="button" onclick="guardarCuenta()">Guardar</button>
+            
+            <button class="modificar" type="button" onclick="modificarCuenta()">Modificar</button>
+            
+            Consultar Por código de cuenta:
+            <input type="text" id="consultaNumeroDeCuenta">
+            <button type="button" onclick="consultarCuenta()">Consultar</button>
+            
+            Eliminar por código de cuenta:
+            <input type="text" id="eliminarNumeroDeCuenta">
+            <button type="button" onclick="eliminarCuenta()">Eliminar</button>
+        </fieldset>
+        <table border="1" id="tablaDeCuentasBancarias" class="tablaDeCuentasBancarias">
+            <tr>
+                <th>Numero de cuenta</th>
+                <th>Nombre del banco</th>
+                <th>Tipo de cuenta</th>
+                <th>Saldo actual</th>
+                <th>Estado de cuenta</th>
+                <th>Fecha de apertura</th>
+            </tr>
+        </table>
+    </form>
+        <script src="../js/gestioncuentasbancarias.js"></script>
+</body>
+</html>

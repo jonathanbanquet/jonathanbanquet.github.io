@@ -1,0 +1,218 @@
+body{
+    background-color: rgb(28,27,20);
+    
+}
+
+.flex-Container{
+display: flex;
+align-items: center;
+ color: white;
+ justify-content: space-between;
+ padding-top: 20px;
+ 
+ padding-right: 5%;
+ font-weight: 12px;
+}
+
+.flex-Hijo1{
+    align-items: center;
+width: 60%;
+border: 1px solid rgba(43,40,39,255);
+border-left: none;
+border-right: none;
+}
+
+.flex-Hijo1 nav{
+padding: 20px;
+padding-left: 5%;
+}
+
+.flex-Hijo1 nav a{
+
+color: white;
+text-decoration: none;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-Hijo2{
+    width: 100%;
+    border: 1px solid rgba(43,40,39,255);
+    border-right: none;
+    border-left: none;
+}
+
+.flex-Hijo2 nav {
+    padding: 20px;
+padding-left: 70%;
+}
+
+.flex-Hijo2 nav a{
+
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: right;
+    padding-right: 20px;
+    
+    }
+
+.nav2{
+max-width: auto;
+margin: auto;
+border: 1px solid rgba(43,40,39,255);
+font-size: 14px;
+border-top: none;
+border-left: none;
+border-right: none;
+
+}
+
+.menu-Horizontal{
+list-style: none;
+display: flex;
+justify-content: space-around;
+background-color: rgb(28,27,20);
+padding-top: 60px;
+
+}
+.menu-Horizontal > li > a{
+    
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+ .menu-Horizontal > li:hover{
+background-color:  rgba(43,40,39,255);
+
+ }
+ .menu-Vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, .5);
+
+ }
+
+
+ .menu-Vertical li a{
+
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8px;
+
+ }
+
+.menu-Horizontal li:hover .menu-Vertical{
+    display: block;
+}
+
+.flex-Container2{
+display: flex;
+justify-content: space-between;
+justify-items: center;
+margin: 30px;
+padding-top: 50px;
+}
+
+
+.my-button {
+    padding: 10px 20px;
+    background-color: rgb(156,4,4);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    
+    
+  }
+  .my-button:hover {
+    background-color: rgb(156,4,7);
+  }
+  .my-button:active {
+    background-color: rgb(156,4,7);
+  }
+
+
+.flex-Hijo3 .my-button{
+margin: 30%;
+margin-top: 80px;
+
+}
+
+.flex-Hijo4 .my-button{
+    margin: 30%;
+    margin-top: 80px;
+    
+    }
+
+.flex-Hijo5 .my-button{
+        margin: 30%;
+        margin-top: 80px;
+        }
+
+ h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+   padding-left: 26px;
+        }
+
+h4 {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 100;
+    font-size: medium;
+    padding-left: 26px;
+}
+.mission{
+    border: 1px solid rgba(43,40,39,255);
+    padding-top: 26px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.vission{
+    border: 1px solid rgba(43,40,39,255);
+    padding-top: 26px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.imagen{
+
+
+    margin-top: 26px;
+    margin-left: 70px;
+    margin-right: 26px;
+    
+}
+
+.logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    padding-left: 26px;
+    position: absolute;
+    animation: slide 5s infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(100vw);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

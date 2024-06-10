@@ -1,0 +1,67 @@
+/*
+	Color fondo: #632432;
+	Color header: 246355;
+	Color borde: 0F362D;
+	Color iluminado: 369681;
+*/
+.menu-inicio{
+    
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+        background-color: rgb(28,27,20);
+         
+}
+.menu-inicio > li > a{
+
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+ .menu-inicio > li:hover{
+background-color:  rgba(43,40,39,255);
+
+ }
+body{
+	background-color: rgb(28,27,20);
+	font-family: Arial;
+    
+}
+
+.tablaDeCuentas{
+	margin: 150px auto;
+	width: 600px;
+}
+
+table{
+	background-color: white;
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td{
+	padding: 20px;
+}
+
+thead{
+	background-color: #246355;
+	border-bottom: solid 5px #0F362D;
+	color: white;
+}
+
+tr:nth-child(even){
+	background-color: #ddd;
+}
+
+tr:hover td{
+	background-color: #369681;
+	color: white;
+}
+h1{
+    color: white;
+	font-family: Arial, Helvetica, sans-serif;
+}

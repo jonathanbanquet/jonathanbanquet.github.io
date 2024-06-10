@@ -1,0 +1,145 @@
+body{
+    background-color: rgb(28,27,20);
+}
+
+
+.form-cuentas-bancarias h1{
+    color: black;
+}
+.menu-inicio{
+    
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+        background-color: rgb(28,27,20);
+         
+}
+.menu-inicio > li > a{
+
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+ .menu-inicio > li:hover{
+background-color:  rgba(43,40,39,255);
+
+ }
+  
+
+
+form-cuentas-bancarias h1{
+    color: black;
+}
+  
+ .tablaDeCuentasBancarias{
+	margin: 150px auto;
+	width: 600px;
+    margin-left: 700px;
+    margin-top: -600px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table{
+	background-color: white;
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td{
+	padding: 20px;
+}
+
+thead{
+	background-color: #246355;
+	border-bottom: solid 5px #0F362D;
+	color: white;
+}
+
+tr:nth-child(even){
+	background-color: #ddd;
+}
+
+tr:hover td{
+	background-color: #369681;
+	color: white;
+}
+h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ .form-cuentas-bancarias {
+    margin-left: 15px;
+    width: 600px;
+    height: 1000px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.form-cuentas-bancarias h1 {
+    color: #246355;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-cuentas-bancarias input[type="text"],
+.form-cuentas-bancarias input[type="number"],
+.form-cuentas-bancarias input[type="date"],
+.form-cuentas-bancarias select,
+.form-cuentas-bancarias button {
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-cuentas-bancarias input[type="text"]:focus,
+.form-cuentas-bancarias input[type="number"]:focus,
+.form-cuentas-bancarias input[type="date"]:focus,
+.form-cuentas-bancarias select:focus {
+    outline: none;
+    border-color: #246355;
+}
+
+.form-cuentas-bancarias button {
+    background-color: #246355;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.form-cuentas-bancarias button:hover {
+    background-color: #0F362D;
+}
+
+.form-cuentas-bancarias button.modificar {
+    background-color: #FFA500;
+}
+
+.form-cuentas-bancarias button.modificar:hover {
+    background-color: #FF8C00;
+}
+
+.form-cuentas-bancarias input[type="text"]::placeholder,
+.form-cuentas-bancarias input[type="number"]::placeholder,
+.form-cuentas-bancarias input[type="date"]::placeholder {
+    color: #999;
+}
+
+.form-cuentas-bancarias select {
+    width: calc(100% - 42px); /* Adjusting for select arrow */
+}
+
+.form-cuentas-bancarias fieldset {
+    border: none;
+}

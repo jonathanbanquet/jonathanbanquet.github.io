@@ -1,0 +1,134 @@
+
+body{
+    background-color: rgb(28,27,20);
+
+}
+.menu-inicio{
+    
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+        background-color: rgb(28,27,20);
+         
+}
+.menu-inicio > li > a{
+
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+ .menu-inicio > li:hover{
+background-color:  rgba(43,40,39,255);
+
+ }
+  
+ .tablaDeIngresosYEgresos{
+	margin: 150px auto;
+	width: 600px;
+    margin-left: 700px;
+    margin-top: -700px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*
+.tablaDeIngresosYEgresos{
+
+}
+
+    */
+
+
+table{
+	background-color: white;
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+    
+}
+
+th, td{
+	padding: 20px;
+}
+
+thead{
+	background-color: #246355;
+	border-bottom: solid 5px #0F362D;
+	color: white;
+}
+
+tr:nth-child(even){
+	background-color: #ddd;
+}
+
+tr:hover td{
+	background-color: #369681;
+	color: white;
+}
+h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-cuentas-ingresoyegreso {
+    margin-left: 15px;
+    width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-cuentas-ingresoyegreso h1 {
+    color: #246355;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-cuentas-ingresoyegreso input[type="text"],
+.form-cuentas-ingresoyegreso input[type="number"],
+.form-cuentas-ingresoyegreso button {
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-cuentas-ingresoyegreso input[type="text"]:focus,
+.form-cuentas-ingresoyegreso input[type="number"]:focus {
+    outline: none;
+    border-color: #246355;
+}
+
+.form-cuentas-ingresoyegreso button {
+    background-color: #246355;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.form-cuentas-ingresoyegreso button:hover {
+    background-color: #0F362D;
+}
+
+.form-cuentas-ingresoyegreso button.modificar {
+    background-color: #FFA500;
+}
+
+.form-cuentas-ingresoyegreso button.modificar:hover {
+    background-color: #FF8C00;
+}
+
+.form-cuentas-ingresoyegreso input[type="text"]::placeholder,
+.form-cuentas-ingresoyegreso input[type="number"]::placeholder {
+    color: #999;
+}
+
+.form-cuentas-ingresoyegreso fieldset {
+    border: none;
+}
+

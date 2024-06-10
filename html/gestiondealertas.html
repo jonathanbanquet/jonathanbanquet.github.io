@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de alertas</title>
+    <link rel="stylesheet" href="../css/formalertas.css">
+</head>
+<body onload="cargarAlertasGuardadas()">
+    <h1>Gestion De alertas</h1>
+    <nav>
+        <ul class="menu-inicio">
+            <li>
+                <a href="../html/principal.html" class="inicio">Inicio</a>
+            </li>
+        </ul>
+    </nav>
+    <form onsubmit="return guardarAlerta(event)">
+        <fieldset class="form-alertas">
+            <h1>Gestion de alertas</h1>
+            
+            
+            <label for="tipoDeAlerta">Tipo de alerta:</label>
+            <select id="tipoDeAlerta" required>
+                <option value="vencimientoFactura">Vencimiento de factura</option>
+                <option value="saldoMinimoAlcanzado">Saldo Minimo Alcanzado</option>
+                <option value="cuentaBloqueada">Cuenta Bloqueada</option>
+            </select>
+            
+            Descripcion de la alerta:
+            <input type="text" required id="descripcionAlerta">
+            
+            Fecha y hora de la alerta:
+            <input type="date" required id="fechaAlerta">
+            <input type="time" required id="horaAlerta">
+            
+            
+            <label for="opcionesDeRepeticion">Opciones de repeticion:</label>
+            <select id="opcionesDeRepeticion" required>
+                <option value="unaVez">Una vez</option>
+                <option value="diariamente">Diariamente</option>
+                <option value="semanalmente">Semanalmente</option>
+                <option value="mensualmente">Mensualmente</option>
+            </select>
+            
+            <button class="guardar" type="submit">Guardar</button>
+            <br>
+            <button class="modificar" type="button" onclick="modificarAlerta()">Modificar</button>
+            
+            Consultar por fecha:
+            <input type="date" id="consultarPorFecha">
+            <button type="button" onclick="consultar_Por_Fecha()">Consultar</button>
+            
+            Eliminar por fecha:
+            <input type="date" id="eliminarPorFecha">
+            <button type="button" onclick="eliminar_Por_Fecha()">Eliminar</button>
+        </fieldset>  
+    </form>
+    <table border="1" class="tablaDeAlertas" id="tablaDeAlertas">
+        <tr>
+            <th>Tipo de alerta</th>
+            <th>Descripcion de la alerta</th>
+            <th>Fecha y hora de la alerta</th>
+            <th>Opciones de repeticion</th>
+        </tr>
+    </table>
+    <table border="1" class="tablaDeConsultas" id="tablaDeConsultas">
+        <tr>
+            <th>Alertas</th>
+        </tr>
+    </table>
+    <script src="../js/alertas.js"></script>
+</body>
+</html>

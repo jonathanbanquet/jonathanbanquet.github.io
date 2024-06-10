@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/formingresoyegreso.css">
+    <title>Gestión de Ingresos y Egresos</title>
+</head>
+<body onload="cargarCuentasGuardadas();  cargarHistorialTransacciones();">
+    <h1>Gestión de Ingresos y Egresos</h1>
+    <nav>
+        <ul class="menu-inicio">
+            <li>
+                <a href="../html/principalAdmin.html" class="inicio">Inicio</a>
+            </li>
+        </ul>
+    </nav>
+    <form onsubmit="return guardarIngresoEgreso(event)">
+        <fieldset class="form-cuentas-ingresoyegreso">
+            <h1>Gestión de Ingresos y Egresos</h1>
+            
+            Número de cuenta:
+            <input type="number" required min="1" placeholder="Digite su número" id="numeroDeCuenta">
+            
+            Nombre del tipo:
+            <input type="text" required id="nombreDelTipo">
+            
+            Descripción:
+            <input type="text" required id="descripcion">
+            
+            Tipo:
+            <input type="text" required id="tipoI_E">
+            
+            Categoría:
+            <input type="text" required id="categoria">
+          
+            <button type="submit" class="guardar">Guardar</button>
+            
+            <button type="button" class="modificar" onclick="modificarIngresoEgreso()">Modificar</button>
+            
+            Consultar por código de cuenta:
+            <input type="text" id="consultarIngreso_Egreso">
+            <button type="button" onclick="consultarIngresoEgreso()">Consultar</button>
+           
+            Eliminar por código de cuenta:
+            <input type="text" id="eliminarIngresoEgreso">
+            <button type="button" onclick="eliminar_IngresoEgreso()">Eliminar</button>
+        </fieldset>
+    </form>
+    <table border="1" id="tablaDeIngresosYEgresos" class="tablaDeRegistrar">
+        <tr>
+            <td>Número de cuenta</td>
+            <td>Nombre del tipo</td>
+            <td>Descripción</td>
+            <td>Tipo</td>
+            <td>Categoría</td>
+        </tr>
+    </table>
+    
+    <table border="1" id="historialTransacciones" class="tablaDeIngresosYEgresos">
+        <tr>
+            <th>Tipo de Transacción</th>
+            <th>Tipo de Ingreso</th>
+            <th>Valor de Transacción</th>
+            <th>Número de Cuenta</th>
+            <th>Fecha de Transacción</th>
+        </tr>
+    </table>
+    <script src="../js/ingresosyegresos.js"></script>
+</body>
+</html>
